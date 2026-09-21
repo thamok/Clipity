@@ -48,9 +48,13 @@ does not guarantee background clipboard access. iOS can suspend or terminate the
 app, and force-quitting stops monitoring.
 
 When iOS reports a background clipboard change but withholds its contents,
-Clipity posts a content-free notification. Expanding that notification lets the
-notification extension save the clipboard value that is current at that moment.
-Copies made in between can no longer be recovered.
+Clipity posts at most one content-free notification for each new pasteboard
+token. Expanding that notification lets the notification extension save the
+clipboard value that is current at that moment. Copies made in between can no
+longer be recovered. When contents are available, Clipity compares a persisted
+SHA-256 fingerprint of the ordered payload and only sends a capture notification
+when that payload actually changed; the comparison buffer never stores another
+raw copy of the clipboard.
 
 ## Requirements
 
@@ -137,7 +141,9 @@ app and extensions cannot overwrite one another's changes. Metadata snapshots
 store large image and file payloads by SHA-256 identifier; clients hydrate a
 payload only when they need it. Capture receipts are committed in the same
 transaction as their clippings, preventing the app, notification extension, and
-Shortcuts from saving the same clipboard event more than once.
+Shortcuts from saving the same clipboard event more than once. The persisted
+clipboard fingerprint and last observed token also coalesce repeated OS change
+signals across process launches.
 
 ## License
 

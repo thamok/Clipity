@@ -153,17 +153,17 @@
 		0D4C3B549B0B32F7D54BBD2A /* ClipLabeler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipLabeler.swift; sourceTree = "<group>"; };
 		127BAC1BD8C0BFB3BCEFF062 /* ClipIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipIntents.swift; sourceTree = "<group>"; };
 		2323808CC6D37C3C760ADDF9 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
-		239EB3F3B1B6B39EF3250F7D /* ClipityTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ClipityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		239EB3F3B1B6B39EF3250F7D /* ClipityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClipityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23B2E89C57E3728B4E0ED729 /* ClipRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipRoute.swift; sourceTree = "<group>"; };
 		248F6C3C2F392B246234B475 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		28BAA35CCE6DD961176F4EC6 /* ClippingEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClippingEntity.swift; sourceTree = "<group>"; };
 		2D0C8F252B330A129894377D /* ClipDeviceInteractionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipDeviceInteractionTests.swift; sourceTree = "<group>"; };
 		2F36412DC4E2EFB7F0E9D738 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		3003469134993CC3924C59AC /* ClipityNotification.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = ClipityNotification.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3003469134993CC3924C59AC /* ClipityNotification.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ClipityNotification.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		35DCD03E06503E2421D51328 /* ClipTitleGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipTitleGenerator.swift; sourceTree = "<group>"; };
 		3C59A203979570A7D1212321 /* ClipStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipStoreTests.swift; sourceTree = "<group>"; };
 		47FE2A43745B4C4CE5E102DF /* ClipboardCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardCapture.swift; sourceTree = "<group>"; };
-		57AEB2BC4B19E4972EE02C53 /* ClipityWidgets.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = ClipityWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		57AEB2BC4B19E4972EE02C53 /* ClipityWidgets.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ClipityWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		57C12D45C94689E6558BFEA1 /* ClipThumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipThumbnail.swift; sourceTree = "<group>"; };
 		5CE37E62D7D859C549157724 /* ContentLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentLoader.swift; sourceTree = "<group>"; };
 		6221451A47B5DA8F6C5D4392 /* Privacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Privacy.swift; sourceTree = "<group>"; };
@@ -177,21 +177,21 @@
 		8F9B66ACF113A056484AC4CB /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
 		9F54E9CCD82195A56EE70845 /* ClipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipApp.swift; sourceTree = "<group>"; };
 		A57CC339BB001326468E84F5 /* ClipTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipTheme.swift; sourceTree = "<group>"; };
-		AE1CA72994F40420CE8B80C7 /* ClipityShare.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = ClipityShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE1CA72994F40420CE8B80C7 /* ClipityShare.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ClipityShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		B34CF73F8EE6311E208A32CF /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		B3C2D061090A8969761F8FD7 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		B69B5C7AEAD92D6AB7317033 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		BBEFECE45477249B0DB9DEBA /* ClipityUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ClipityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBEFECE45477249B0DB9DEBA /* ClipityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClipityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD3B554F5FB5701DF8613706 /* ClipTestSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipTestSource.swift; sourceTree = "<group>"; };
-		BF88AD602B60E8068D6B3FE3 /* ClipityKeyboard.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = ClipityKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF88AD602B60E8068D6B3FE3 /* ClipityKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ClipityKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		C098BFB13B54426E99DB1F55 /* ClipTitleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipTitleTests.swift; sourceTree = "<group>"; };
 		C18C6A7ECD95144DFBE22E6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C224A0C28F20C51B06B7B377 /* ClipNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipNotifications.swift; sourceTree = "<group>"; };
 		C73C9DB2C477F061E2336175 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		CACDFDE6048C69E60C4F3AD8 /* ClipityTestSource.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = ClipityTestSource.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CACDFDE6048C69E60C4F3AD8 /* ClipityTestSource.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClipityTestSource.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBEBBE41537185023F43E72D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		CFF40C6C746A5CEE082EFFE3 /* ClipQuickActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipQuickActions.swift; sourceTree = "<group>"; };
-		D1596AFE39A3E0D006A54B20 /* Clipity.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Clipity.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1596AFE39A3E0D006A54B20 /* Clipity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clipity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8BDCB79E36DA034696FDC61 /* PasteboardMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteboardMonitor.swift; sourceTree = "<group>"; };
 		F2A9E42319C0B99DE889F94C /* ClipInteractionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipInteractionTests.swift; sourceTree = "<group>"; };
 		F79BF3522DD6894765AE1A05 /* ClipStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipStore.swift; sourceTree = "<group>"; };
@@ -756,6 +756,7 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_ENTITLEMENTS = Shared.entitlements;
+				DEVELOPMENT_TEAM = YYNDR9WF6B;
 				INFOPLIST_FILE = Widgets/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -773,6 +774,7 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_ENTITLEMENTS = Shared.entitlements;
+				DEVELOPMENT_TEAM = YYNDR9WF6B;
 				INFOPLIST_FILE = Notification/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -791,7 +793,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Shared.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = YYNDR9WF6B;
 				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Clipity;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -806,6 +811,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = YYNDR9WF6B;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -824,6 +830,7 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_ENTITLEMENTS = Shared.entitlements;
+				DEVELOPMENT_TEAM = YYNDR9WF6B;
 				INFOPLIST_FILE = Notification/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -841,6 +848,7 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_ENTITLEMENTS = Shared.entitlements;
+				DEVELOPMENT_TEAM = YYNDR9WF6B;
 				INFOPLIST_FILE = Keyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -857,6 +865,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = YYNDR9WF6B;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -875,6 +884,7 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_ENTITLEMENTS = Shared.entitlements;
+				DEVELOPMENT_TEAM = YYNDR9WF6B;
 				INFOPLIST_FILE = Share/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -891,6 +901,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = YYNDR9WF6B;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -909,6 +920,7 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_ENTITLEMENTS = Shared.entitlements;
+				DEVELOPMENT_TEAM = YYNDR9WF6B;
 				INFOPLIST_FILE = Keyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -926,6 +938,7 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_ENTITLEMENTS = Shared.entitlements;
+				DEVELOPMENT_TEAM = YYNDR9WF6B;
 				INFOPLIST_FILE = Widgets/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -943,6 +956,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = YYNDR9WF6B;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -961,6 +975,7 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_ENTITLEMENTS = Shared.entitlements;
+				DEVELOPMENT_TEAM = YYNDR9WF6B;
 				INFOPLIST_FILE = Share/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -978,6 +993,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = YYNDR9WF6B;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -995,6 +1011,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = YYNDR9WF6B;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1014,7 +1031,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Shared.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = YYNDR9WF6B;
 				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Clipity;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

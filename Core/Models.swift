@@ -89,6 +89,12 @@ struct CaptureReceipt: Codable, Sendable {
 struct CaptureResult: Sendable {
     var clips: [Clipping]
     var isNew: Bool
+    var contentChanged: Bool
+}
+
+struct ClipboardBuffer: Codable, Sendable, Equatable {
+    var token: String
+    var fingerprint: String?
 }
 
 struct Library: Codable, Sendable {
@@ -97,6 +103,7 @@ struct Library: Codable, Sendable {
     var folders: [ClipFolder] = []
     var settings = ClipSettings()
     var captureReceipts: [CaptureReceipt]?
+    var clipboardBuffer: ClipboardBuffer?
 }
 
 extension String {
