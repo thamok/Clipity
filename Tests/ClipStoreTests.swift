@@ -23,6 +23,7 @@ struct ClipStoreTests {
                 #"{"version":1,"clips":[],"folders":[],"settings":{"automaticCapture":true,"aiLabels":false,"historyLimit":50}}"#
                     .utf8))
         #expect(library.captureReceipts == nil)
+        #expect(library.clipboardBuffer == nil)
         #expect(library.settings.historyLimit == 50)
     }
 
@@ -103,6 +104,7 @@ struct ClipStoreTests {
         async let two = second.captureBatch([original], token: "boot:copy")
         let results = try await [one, two]
         #expect(results.filter(\.isNew).count == 1)
+        #expect(results.filter(\.contentChanged).count == 1)
         #expect(try await first.snapshot().clips.count == 1)
         let folder = try await first.folder(name: "Permanent")
         let promoted = Clipping(text: original.text, title: "Named copy", folderID: folder.id, isSaved: true)
@@ -111,6 +113,31 @@ struct ClipStoreTests {
         #expect(result.clips.first?.isSaved == true && result.clips.first?.folderID == folder.id)
         #expect(result.clips.first?.title == "Named copy")
         #expect(try await first.snapshot().clips.count == 1)
+    }
+
+    @Test func clipboardBufferSuppressesUnchangedContentAcrossEventsAndRelaunches() async throws {
+        let (store, url) = store()
+        defer { try? FileManager.default.removeItem(at: url) }
+        let original = Clipping(text: "Same clipboard payload")
+        let first = try await store.captureBatch([original], token: "boot:1")
+        let repeated = try await ClipStore(url: url).captureBatch(
+            [Clipping(text: original.text)], token: "boot:2")
+        let changed = try await ClipStore(url: url).captureBatch(
+            [Clipping(text: "A different clipboard payload")], token: "boot:3")
+
+        #expect(first.contentChanged)
+        #expect(!repeated.contentChanged)
+        #expect(changed.contentChanged)
+        #expect(try await store.snapshot().clipboardBuffer?.token == "boot:3")
+    }
+
+    @Test func pendingClipboardSignalsArePersistentlyCoalescedByToken() async throws {
+        let (store, url) = store()
+        defer { try? FileManager.default.removeItem(at: url) }
+
+        #expect(try await store.markPendingClipboardSignal(token: "boot:10"))
+        #expect(!(try await ClipStore(url: url).markPendingClipboardSignal(token: "boot:10")))
+        #expect(try await ClipStore(url: url).markPendingClipboardSignal(token: "boot:11"))
     }
 
     @Test func failedCaptureDoesNotLeaveReceiptAndRetryWorks() async throws {

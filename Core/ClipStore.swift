@@ -166,11 +166,26 @@ actor ClipStore {
     /// A receipt and its entries commit together, including across app/extension processes.
     func captureBatch(_ clips: [Clipping], token: String, requireAutomaticCapture: Bool = false) throws -> CaptureResult
     {
-        try ingest(clips, captureToken: token, requireAutomaticCapture: requireAutomaticCapture)
+        try ingest(
+            clips, captureToken: token, clipboardFingerprint: Self.clipboardFingerprint(clips),
+            requireAutomaticCapture: requireAutomaticCapture)
     }
 
-    private func ingest(_ clips: [Clipping], captureToken: String?, requireAutomaticCapture: Bool = false) throws
-        -> CaptureResult
+    /// Records a signal whose contents iOS would not expose. This keeps repeated
+    /// lifecycle notifications for one pasteboard event from repeatedly alerting.
+    func markPendingClipboardSignal(token: String) throws -> Bool {
+        try transaction { library in
+            guard library.clipboardBuffer?.token != token else { return false }
+            library.clipboardBuffer = ClipboardBuffer(
+                token: token, fingerprint: library.clipboardBuffer?.fingerprint)
+            return true
+        }
+    }
+
+    private func ingest(
+        _ clips: [Clipping], captureToken: String?, clipboardFingerprint: String? = nil,
+        requireAutomaticCapture: Bool = false
+    ) throws -> CaptureResult
     {
         guard !clips.isEmpty else { throw ClipError.empty }
         guard clips.count <= 20,
@@ -191,6 +206,13 @@ actor ClipStore {
                 }
             }
             if let captureToken, let receipt = library.captureReceipts?.first(where: { $0.token == captureToken }) {
+                // Existing receipts predate the persistent clipboard buffer on
+                // upgraded installs. Seed it quietly instead of announcing an
+                // already handled copy event.
+                if library.clipboardBuffer == nil {
+                    library.clipboardBuffer = ClipboardBuffer(
+                        token: captureToken, fingerprint: clipboardFingerprint)
+                }
                 // A Shortcut can promote an automatically captured clipping without duplicating it.
                 for (offset, id) in receipt.clipIDs.enumerated() {
                     guard clips.indices.contains(offset), let index = library.clips.firstIndex(where: { $0.id == id })
@@ -203,8 +225,11 @@ actor ClipStore {
                     }
                 }
                 return CaptureResult(
-                    clips: receipt.clipIDs.compactMap { id in library.clips.first { $0.id == id } }, isNew: false)
+                    clips: receipt.clipIDs.compactMap { id in library.clips.first { $0.id == id } }, isNew: false,
+                    contentChanged: false)
             }
+            let contentChanged =
+                clipboardFingerprint.map { $0 != library.clipboardBuffer?.fingerprint } ?? true
             var results: [Clipping] = []
             for var clip in clips {
                 if let image = clip.image { clip.imageID = Self.imageID(image) }
@@ -226,9 +251,35 @@ actor ClipStore {
                 var receipts = library.captureReceipts ?? []
                 receipts.append(CaptureReceipt(token: captureToken, clipIDs: results.map(\.id)))
                 library.captureReceipts = Array(receipts.suffix(32))
+                library.clipboardBuffer = ClipboardBuffer(
+                    token: captureToken, fingerprint: clipboardFingerprint)
             }
-            return CaptureResult(clips: results, isNew: true)
+            return CaptureResult(clips: results, isNew: true, contentChanged: contentChanged)
         }
+    }
+
+    /// Hash only the ordered clipboard payload, excluding dates, generated IDs,
+    /// titles, folders, and labels. Persisting a digest avoids retaining a second
+    /// copy of potentially private clipboard contents solely for comparison.
+    private static func clipboardFingerprint(_ clips: [Clipping]) throws -> String {
+        struct Payload: Encodable {
+            var text: String
+            var image: String?
+            var file: String?
+            var filename: String?
+            var fileType: String?
+        }
+        let payloads = clips.map {
+            Payload(
+                text: $0.text,
+                image: $0.imageID ?? $0.image.map(imageID),
+                file: $0.fileID ?? $0.fileData.map(imageID),
+                filename: $0.filename,
+                fileType: $0.fileType)
+        }
+        let encoder = JSONEncoder()
+        encoder.outputFormatting = [.sortedKeys, .withoutEscapingSlashes]
+        return imageID(try encoder.encode(payloads))
     }
 
     func clipping(id: UUID) throws -> Clipping {

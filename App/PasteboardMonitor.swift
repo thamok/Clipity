@@ -157,10 +157,7 @@ final class PasteboardMonitor: NSObject, @preconcurrency CLLocationManagerDelega
             return
         }
         do {
-            let result = try await capture(automatic: true)
-            if background && backgroundSignal && !result.isNew && settings.captureNotifications {
-                try await ClipityNotifications.pending(token: nil)
-            }
+            _ = try await capture(automatic: true)
         } catch {
             status = error.localizedDescription
             guard background, settings.automaticCapture, settings.captureNotifications,
@@ -169,8 +166,10 @@ final class PasteboardMonitor: NSObject, @preconcurrency CLLocationManagerDelega
             do {
                 // iOS can hide both the contents and the counter in the background.
                 // The extension explicitly saves the CURRENT clipboard in that case.
-                try await ClipityNotifications.pending(token: nil)
-                status = "Clipboard changed — expand the notification to save"
+                if try await ClipStore.shared.markPendingClipboardSignal(token: token) {
+                    try await ClipityNotifications.pending(token: nil)
+                    status = "Clipboard changed — expand the notification to save"
+                }
             } catch { lastError = "Could not send clipboard notification: \(error.localizedDescription)" }
         }
     }
@@ -185,7 +184,7 @@ final class PasteboardMonitor: NSObject, @preconcurrency CLLocationManagerDelega
         // They use the same durable receipt; don't silently drop the user's action.
         if automatic && captureCount > 0 {
             pendingChange = true
-            return CaptureResult(clips: [], isNew: false)
+            return CaptureResult(clips: [], isNew: false, contentChanged: false)
         }
         captureCount += 1
         let token = ClipboardCapture.currentToken
@@ -203,7 +202,7 @@ final class PasteboardMonitor: NSObject, @preconcurrency CLLocationManagerDelega
             expectedToken: expectedToken, title: title, folderID: folderID, keep: keep, automatic: automatic)
         status = result.isNew ? "Saved to history" : "Clipboard already in history"
         ClipityNotifications.clearPending()
-        if automatic && settings.captureNotifications && result.isNew {
+        if automatic && settings.captureNotifications && result.contentChanged {
             do { try await ClipityNotifications.saved(count: result.clips.count) } catch {
                 lastError = "Clipping saved, but its notification failed: \(error.localizedDescription)"
             }

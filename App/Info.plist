@@ -35,19 +35,21 @@
 	<false/>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Background monitoring uses location activity to keep your clipboard listener running. Clipity does not save or share your location.</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>Allow background location activity so your personal clipboard listener can keep running while you use other apps. Clipity does not save or share coordinates.</string>
 	<key>NSLocationDefaultAccuracyReduced</key>
 	<true/>
-	<key>UIBackgroundModes</key>
-	<array><string>location</string></array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Background monitoring uses location activity to keep your clipboard listener running. Clipity does not save or share your location.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
 		<true/>
 	</dict>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>location</string>
+	</array>
 	<key>UILaunchScreen</key>
 	<dict/>
 	<key>UISupportedInterfaceOrientations</key>
