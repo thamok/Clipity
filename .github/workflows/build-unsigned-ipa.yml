@@ -1,0 +1,39 @@
+name: Build unsigned IPA
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: unsigned-ipa-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Archive unsigned app
+    runs-on: macos-26
+    timeout-minutes: 30
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v5
+
+      - name: Show build environment
+        run: xcodebuild -version
+
+      - name: Build unsigned IPA
+        run: ./Scripts/build-unsigned-ipa.sh
+
+      - name: Upload unsigned IPA
+        uses: actions/upload-artifact@v4
+        with:
+          name: Clipity-unsigned-${{ github.sha }}
+          path: Clipity-unsigned.ipa
+          if-no-files-found: error
+          retention-days: 14
