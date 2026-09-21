@@ -117,6 +117,13 @@ The signed script uses the signing configuration selected in Xcode. The unsigned
 archive is intended for a separate signing workflow, which must sign the app and
 every extension with matching App Group entitlements.
 
+If a sideloading signer cannot preserve the App Group entitlement, Clipity falls
+back to `Library/Application Support/AppGroup` inside the current process's
+container. This matches the storage remapping used by common sideload keychain
+fixes and lets the main app operate without an injected dylib. App and extension
+storage is shared only when the signer preserves a matching App Group entitlement
+for every target.
+
 GitHub Actions also builds the unsigned archive for pushes to `main`, pull
 requests, and manual runs. Each run retains the IPA artifact for 14 days.
 

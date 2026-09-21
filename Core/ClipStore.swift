@@ -12,13 +12,25 @@ actor ClipStore {
 
     init(url: URL? = nil) { explicitURL = url }
 
+    static func storageRoot(
+        groupContainer: (String) -> URL? = {
+            FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: $0)
+        },
+        applicationSupport: () -> URL? = {
+            FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).last
+        }
+    ) throws -> URL {
+        if let shared = groupContainer(groupID) { return shared }
+        guard let local = applicationSupport() else { throw ClipError.unavailable }
+        return local.appendingPathComponent("AppGroup", isDirectory: true)
+    }
+
     private func databaseURL() throws -> URL {
         if let explicitURL { return explicitURL }
-        guard let root = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: Self.groupID) else {
-            throw ClipError.unavailable
-        }
+        let fileManager = FileManager.default
+        let root = try Self.storageRoot()
         let directory = root.appendingPathComponent("Library", isDirectory: true)
-        try FileManager.default.createDirectory(
+        try fileManager.createDirectory(
             at: directory, withIntermediateDirectories: true,
             attributes: [.protectionKey: FileProtectionType.complete])
         return directory.appendingPathComponent("Clipity.sqlite")

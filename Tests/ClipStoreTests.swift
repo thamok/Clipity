@@ -11,6 +11,19 @@ struct ClipStoreTests {
         return (ClipStore(url: url), url)
     }
 
+    @Test func storageUsesAppGroupThenSideloadFallback() throws {
+        let shared = URL(fileURLWithPath: "/shared")
+        let local = URL(fileURLWithPath: "/local")
+        #expect(
+            try ClipStore.storageRoot(groupContainer: { _ in shared }, applicationSupport: { local }) == shared)
+        #expect(
+            try ClipStore.storageRoot(groupContainer: { _ in nil }, applicationSupport: { local })
+                == local.appendingPathComponent("AppGroup", isDirectory: true))
+        #expect(throws: ClipError.unavailable) {
+            try ClipStore.storageRoot(groupContainer: { _ in nil }, applicationSupport: { nil })
+        }
+    }
+
     @Test func existingSettingsDecodeWithoutLosingPreferences() throws {
         let data = Data(#"{"automaticCapture":false,"aiLabels":true,"historyLimit":100}"#.utf8)
         let settings = try JSONDecoder().decode(ClipSettings.self, from: data)
