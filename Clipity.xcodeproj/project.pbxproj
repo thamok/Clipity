@@ -1,0 +1,1250 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07EFFCA8BEBA69795E26283C /* ClipboardCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FE2A43745B4C4CE5E102DF /* ClipboardCapture.swift */; };
+		0947938B4E85E0C7F18CFDC1 /* Notification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AF18D1865CAE0F0D2D56F0B /* Notification.storyboard */; };
+		0FE2A7BC8AA05CC5FAD46D67 /* ClipNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = C224A0C28F20C51B06B7B377 /* ClipNotifications.swift */; };
+		11011BB5244A2BEC9D108FEE /* ClipStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C59A203979570A7D1212321 /* ClipStoreTests.swift */; };
+		1470744E8BE7A148222FE3AA /* ClipboardCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FE2A43745B4C4CE5E102DF /* ClipboardCapture.swift */; };
+		161630D5D9B2E6C8C61FFAC7 /* ClipQuickActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF40C6C746A5CEE082EFFE3 /* ClipQuickActions.swift */; };
+		168FDAB109BF3F912A0B7F88 /* ClipTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57CC339BB001326468E84F5 /* ClipTheme.swift */; };
+		1DB04919318490AE10701CA9 /* ClipIntentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E02B4C20D0345576359695 /* ClipIntentTests.swift */; };
+		259FC493532480A0872B44C7 /* ClipStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79BF3522DD6894765AE1A05 /* ClipStore.swift */; };
+		27C8FF1372683748E5860EDB /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2D061090A8969761F8FD7 /* Models.swift */; };
+		29C17C8D357D839AFF7FD90A /* ClipEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8946A255C1A43EFEE9D329AB /* ClipEditor.swift */; };
+		2DE7CD8E7598EA11841E9A3D /* BackgroundCaptureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE67E98228EB65BAA72926F /* BackgroundCaptureTests.swift */; };
+		31A5FD9172169F5B3190F56B /* ClipStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79BF3522DD6894765AE1A05 /* ClipStore.swift */; };
+		36CD72161CFCF6A790C119D5 /* ClipRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B2E89C57E3728B4E0ED729 /* ClipRoute.swift */; };
+		3965B96AB76E6A07C526EB8A /* ClipNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = C224A0C28F20C51B06B7B377 /* ClipNotifications.swift */; };
+		428DD694BC3B5E66CF156827 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2D061090A8969761F8FD7 /* Models.swift */; };
+		4599D9E6741C34A86B7019BB /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F01E0A3843DB64DCD1DB23C /* UserNotificationsUI.framework */; };
+		46975502FAD0E6579280A758 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077A5C2015B97D303E0E1C3D /* NotificationViewController.swift */; };
+		486B86DE12B2853270C9BFD7 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248F6C3C2F392B246234B475 /* ShareViewController.swift */; };
+		488C94EF893932C5BD5F236A /* ClipTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57CC339BB001326468E84F5 /* ClipTheme.swift */; };
+		5567AB29D36405D6B2BD8AD0 /* ContentLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE37E62D7D859C549157724 /* ContentLoader.swift */; };
+		5F7953B73EC1E0C96FC1AAB9 /* ClipTitleGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DCD03E06503E2421D51328 /* ClipTitleGenerator.swift */; };
+		620AE99A66579201BF73F56B /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2D061090A8969761F8FD7 /* Models.swift */; };
+		65502B0CE0A664482C7A0885 /* EditorCaptureScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6C816EE6D1DEC730619B8D /* EditorCaptureScope.swift */; };
+		69DE41B31BDF3462322EB44F /* ClipityNotification.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 3003469134993CC3924C59AC /* ClipityNotification.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7126531E9618B356179AFA37 /* ClipTitleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C098BFB13B54426E99DB1F55 /* ClipTitleTests.swift */; };
+		7151D9C6290536F9CEED7329 /* ClipIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127BAC1BD8C0BFB3BCEFF062 /* ClipIntents.swift */; };
+		71E0AAE6B4BF6A06AEE2E34E /* ContentLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE37E62D7D859C549157724 /* ContentLoader.swift */; };
+		734BAF28964FD9F981D6F3B2 /* ClipInteractionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A9E42319C0B99DE889F94C /* ClipInteractionTests.swift */; };
+		77880020D18BA01ED3B98D14 /* ClipTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57CC339BB001326468E84F5 /* ClipTheme.swift */; };
+		7C9FAF3E459C852497027FAA /* ClippingEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BAA35CCE6DD961176F4EC6 /* ClippingEntity.swift */; };
+		893B5DB826CA2DAE427BD50C /* ClipThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C12D45C94689E6558BFEA1 /* ClipThumbnail.swift */; };
+		8BAC42E81736BF3FEA5C8A8E /* ContentLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE37E62D7D859C549157724 /* ContentLoader.swift */; };
+		8C2F439426A0EC6E12969FC0 /* ClipTestSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3B554F5FB5701DF8613706 /* ClipTestSource.swift */; };
+		8D8F8594AABDEFC516897D7E /* ClipStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79BF3522DD6894765AE1A05 /* ClipStore.swift */; };
+		99AC1FF6014880654C38352E /* ClipNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = C224A0C28F20C51B06B7B377 /* ClipNotifications.swift */; };
+		9EB70F93AF9363F96FFACE9F /* ClipDeviceInteractionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0C8F252B330A129894377D /* ClipDeviceInteractionTests.swift */; };
+		A686A7A4995ED6F5B3E442AE /* ClipboardCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FE2A43745B4C4CE5E102DF /* ClipboardCapture.swift */; };
+		AB8D9618F0903DE5F9DFA7D0 /* Privacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6221451A47B5DA8F6C5D4392 /* Privacy.swift */; };
+		ABCADCD942CEAFE9A55301B4 /* ClipUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E4C7BB08054A8E2F66D697 /* ClipUITests.swift */; };
+		AD21DF1CE6E9D23404B41AA5 /* ClipityWidgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 57AEB2BC4B19E4972EE02C53 /* ClipityWidgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B448C394DEC022FE7BBC7132 /* ContentLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE37E62D7D859C549157724 /* ContentLoader.swift */; };
+		B63A09B96A51A65F384249C5 /* ClipboardCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FE2A43745B4C4CE5E102DF /* ClipboardCapture.swift */; };
+		BDB5DE78421DA7A32077B606 /* ClipLabeler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4C3B549B0B32F7D54BBD2A /* ClipLabeler.swift */; };
+		C32FD3CA4BB719E6BA5E0526 /* Privacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6221451A47B5DA8F6C5D4392 /* Privacy.swift */; };
+		C58DE698D5D962BFFFB185D5 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34CF73F8EE6311E208A32CF /* SettingsView.swift */; };
+		C7AC792814AF9D93D1450D03 /* ClipityKeyboard.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BF88AD602B60E8068D6B3FE3 /* ClipityKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CBFE145941CF9BEA2E85FB53 /* ClipTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57CC339BB001326468E84F5 /* ClipTheme.swift */; };
+		CE675E03D659FCE4B8D10FC9 /* ContentLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE37E62D7D859C549157724 /* ContentLoader.swift */; };
+		D3FEFB5136357B0E45E44A59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C18C6A7ECD95144DFBE22E6C /* Assets.xcassets */; };
+		D860FBA2135B8D063279A264 /* ClipTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57CC339BB001326468E84F5 /* ClipTheme.swift */; };
+		D97D1AB374A3918D2B19E04D /* ClipityShare.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = AE1CA72994F40420CE8B80C7 /* ClipityShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DD9EEDBE8E1ED63FE85263BD /* ClipboardCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FE2A43745B4C4CE5E102DF /* ClipboardCapture.swift */; };
+		E3B3098F5D4199A4F5A18FD3 /* ClipNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = C224A0C28F20C51B06B7B377 /* ClipNotifications.swift */; };
+		E7245314ED40F3738577D59D /* Privacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6221451A47B5DA8F6C5D4392 /* Privacy.swift */; };
+		E97DEFFCECDB545D4D5880C0 /* ClipWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628F7BAC6710C58F39708B68 /* ClipWidgets.swift */; };
+		E9A682568EFCE12F8646BB76 /* Privacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6221451A47B5DA8F6C5D4392 /* Privacy.swift */; };
+		EB4340CF5C62840328D426A4 /* ClipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F54E9CCD82195A56EE70845 /* ClipApp.swift */; };
+		ED04312C7F59AA8CD2C54B16 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9B66ACF113A056484AC4CB /* LibraryView.swift */; };
+		ED8829B77376980E247020CC /* ClipNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = C224A0C28F20C51B06B7B377 /* ClipNotifications.swift */; };
+		EED4D4D87152676DDC534C38 /* LibraryNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A9DFFD0184C4CD98341053 /* LibraryNavigationBar.swift */; };
+		F12EBA6E6ED86F9281398DC3 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2D061090A8969761F8FD7 /* Models.swift */; };
+		F5CF115205EE30B66D86FADF /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2323808CC6D37C3C760ADDF9 /* KeyboardViewController.swift */; };
+		F6B81ACEE038ED9FC2AAD4C7 /* PasteboardMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BDCB79E36DA034696FDC61 /* PasteboardMonitor.swift */; };
+		FEB3FE129316D92E9C901A43 /* ClipStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79BF3522DD6894765AE1A05 /* ClipStore.swift */; };
+		FED547EAE3919C255A50DA5E /* Privacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6221451A47B5DA8F6C5D4392 /* Privacy.swift */; };
+		FF6D3C4A1626967751C0AF46 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C2D061090A8969761F8FD7 /* Models.swift */; };
+		FFECB4E982B71204DC03410B /* ClipStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79BF3522DD6894765AE1A05 /* ClipStore.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3780A1CBE22DE6EA7812BE07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D4B9AB9DF8587A15804922C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3EEF83735D9FD47E288298AE;
+			remoteInfo = ClipityNotification;
+		};
+		4D50025853367BDA6ADB6E77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D4B9AB9DF8587A15804922C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6157A9649B72ABC292DE3473;
+			remoteInfo = ClipityShare;
+		};
+		64DBC744E1CB6D229B85D513 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D4B9AB9DF8587A15804922C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B8CB72E8BCA1FA7C6F376C6;
+			remoteInfo = ClipityTestSource;
+		};
+		BFF4AAE8DA999F9726A597E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D4B9AB9DF8587A15804922C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65205A0D60342B11C3794BB0;
+			remoteInfo = Clipity;
+		};
+		C22176742647230D4CC7E096 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D4B9AB9DF8587A15804922C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32BCB88E92B77BF8364DD968;
+			remoteInfo = ClipityKeyboard;
+		};
+		F812E8367E801FE1A45A966C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D4B9AB9DF8587A15804922C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65205A0D60342B11C3794BB0;
+			remoteInfo = Clipity;
+		};
+		F959ACAFCF500A4DDB4CBB92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D4B9AB9DF8587A15804922C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 403EFEF836E24EB4BDDF885C;
+			remoteInfo = ClipityWidgets;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C6AB4C65B99F06A251D26C67 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D97D1AB374A3918D2B19E04D /* ClipityShare.appex in Embed Foundation Extensions */,
+				AD21DF1CE6E9D23404B41AA5 /* ClipityWidgets.appex in Embed Foundation Extensions */,
+				C7AC792814AF9D93D1450D03 /* ClipityKeyboard.appex in Embed Foundation Extensions */,
+				69DE41B31BDF3462322EB44F /* ClipityNotification.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		001DD8B58B13EBDE87EBED0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		077A5C2015B97D303E0E1C3D /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		08E4C7BB08054A8E2F66D697 /* ClipUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipUITests.swift; sourceTree = "<group>"; };
+		0D4C3B549B0B32F7D54BBD2A /* ClipLabeler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipLabeler.swift; sourceTree = "<group>"; };
+		127BAC1BD8C0BFB3BCEFF062 /* ClipIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipIntents.swift; sourceTree = "<group>"; };
+		2323808CC6D37C3C760ADDF9 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		239EB3F3B1B6B39EF3250F7D /* ClipityTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ClipityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		23B2E89C57E3728B4E0ED729 /* ClipRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipRoute.swift; sourceTree = "<group>"; };
+		248F6C3C2F392B246234B475 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		28BAA35CCE6DD961176F4EC6 /* ClippingEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClippingEntity.swift; sourceTree = "<group>"; };
+		2D0C8F252B330A129894377D /* ClipDeviceInteractionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipDeviceInteractionTests.swift; sourceTree = "<group>"; };
+		2F36412DC4E2EFB7F0E9D738 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3003469134993CC3924C59AC /* ClipityNotification.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = ClipityNotification.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		35DCD03E06503E2421D51328 /* ClipTitleGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipTitleGenerator.swift; sourceTree = "<group>"; };
+		3C59A203979570A7D1212321 /* ClipStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipStoreTests.swift; sourceTree = "<group>"; };
+		47FE2A43745B4C4CE5E102DF /* ClipboardCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardCapture.swift; sourceTree = "<group>"; };
+		57AEB2BC4B19E4972EE02C53 /* ClipityWidgets.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = ClipityWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		57C12D45C94689E6558BFEA1 /* ClipThumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipThumbnail.swift; sourceTree = "<group>"; };
+		5CE37E62D7D859C549157724 /* ContentLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentLoader.swift; sourceTree = "<group>"; };
+		6221451A47B5DA8F6C5D4392 /* Privacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Privacy.swift; sourceTree = "<group>"; };
+		628F7BAC6710C58F39708B68 /* ClipWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipWidgets.swift; sourceTree = "<group>"; };
+		65A9DFFD0184C4CD98341053 /* LibraryNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryNavigationBar.swift; sourceTree = "<group>"; };
+		6AF18D1865CAE0F0D2D56F0B /* Notification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notification.storyboard; sourceTree = "<group>"; };
+		6F6C816EE6D1DEC730619B8D /* EditorCaptureScope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorCaptureScope.swift; sourceTree = "<group>"; };
+		83E02B4C20D0345576359695 /* ClipIntentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipIntentTests.swift; sourceTree = "<group>"; };
+		8946A255C1A43EFEE9D329AB /* ClipEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipEditor.swift; sourceTree = "<group>"; };
+		8F01E0A3843DB64DCD1DB23C /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		8F9B66ACF113A056484AC4CB /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		9F54E9CCD82195A56EE70845 /* ClipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipApp.swift; sourceTree = "<group>"; };
+		A57CC339BB001326468E84F5 /* ClipTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipTheme.swift; sourceTree = "<group>"; };
+		AE1CA72994F40420CE8B80C7 /* ClipityShare.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = ClipityShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B34CF73F8EE6311E208A32CF /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B3C2D061090A8969761F8FD7 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		B69B5C7AEAD92D6AB7317033 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BBEFECE45477249B0DB9DEBA /* ClipityUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ClipityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD3B554F5FB5701DF8613706 /* ClipTestSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipTestSource.swift; sourceTree = "<group>"; };
+		BF88AD602B60E8068D6B3FE3 /* ClipityKeyboard.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = ClipityKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C098BFB13B54426E99DB1F55 /* ClipTitleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipTitleTests.swift; sourceTree = "<group>"; };
+		C18C6A7ECD95144DFBE22E6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C224A0C28F20C51B06B7B377 /* ClipNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipNotifications.swift; sourceTree = "<group>"; };
+		C73C9DB2C477F061E2336175 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CACDFDE6048C69E60C4F3AD8 /* ClipityTestSource.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = ClipityTestSource.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBEBBE41537185023F43E72D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CFF40C6C746A5CEE082EFFE3 /* ClipQuickActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipQuickActions.swift; sourceTree = "<group>"; };
+		D1596AFE39A3E0D006A54B20 /* Clipity.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Clipity.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8BDCB79E36DA034696FDC61 /* PasteboardMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteboardMonitor.swift; sourceTree = "<group>"; };
+		F2A9E42319C0B99DE889F94C /* ClipInteractionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipInteractionTests.swift; sourceTree = "<group>"; };
+		F79BF3522DD6894765AE1A05 /* ClipStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipStore.swift; sourceTree = "<group>"; };
+		FFE67E98228EB65BAA72926F /* BackgroundCaptureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundCaptureTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CCF22992C8F1B31423165B0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4599D9E6741C34A86B7019BB /* UserNotificationsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08B04939F3F8B86F5B4F1DD6 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9F54E9CCD82195A56EE70845 /* ClipApp.swift */,
+				8946A255C1A43EFEE9D329AB /* ClipEditor.swift */,
+				127BAC1BD8C0BFB3BCEFF062 /* ClipIntents.swift */,
+				0D4C3B549B0B32F7D54BBD2A /* ClipLabeler.swift */,
+				28BAA35CCE6DD961176F4EC6 /* ClippingEntity.swift */,
+				CFF40C6C746A5CEE082EFFE3 /* ClipQuickActions.swift */,
+				23B2E89C57E3728B4E0ED729 /* ClipRoute.swift */,
+				57C12D45C94689E6558BFEA1 /* ClipThumbnail.swift */,
+				35DCD03E06503E2421D51328 /* ClipTitleGenerator.swift */,
+				6F6C816EE6D1DEC730619B8D /* EditorCaptureScope.swift */,
+				C73C9DB2C477F061E2336175 /* Info.plist */,
+				65A9DFFD0184C4CD98341053 /* LibraryNavigationBar.swift */,
+				8F9B66ACF113A056484AC4CB /* LibraryView.swift */,
+				E8BDCB79E36DA034696FDC61 /* PasteboardMonitor.swift */,
+				B34CF73F8EE6311E208A32CF /* SettingsView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		22A01EFA414233AC8CCDF9EA /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				B69B5C7AEAD92D6AB7317033 /* Info.plist */,
+				248F6C3C2F392B246234B475 /* ShareViewController.swift */,
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
+		38998F4450C38705F727D941 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				001DD8B58B13EBDE87EBED0D /* Info.plist */,
+				6AF18D1865CAE0F0D2D56F0B /* Notification.storyboard */,
+				077A5C2015B97D303E0E1C3D /* NotificationViewController.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		3C008AF97E77E65D9BE433D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D1596AFE39A3E0D006A54B20 /* Clipity.app */,
+				BF88AD602B60E8068D6B3FE3 /* ClipityKeyboard.appex */,
+				3003469134993CC3924C59AC /* ClipityNotification.appex */,
+				AE1CA72994F40420CE8B80C7 /* ClipityShare.appex */,
+				239EB3F3B1B6B39EF3250F7D /* ClipityTests.xctest */,
+				CACDFDE6048C69E60C4F3AD8 /* ClipityTestSource.app */,
+				BBEFECE45477249B0DB9DEBA /* ClipityUITests.xctest */,
+				57AEB2BC4B19E4972EE02C53 /* ClipityWidgets.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A416090C84974865E8D0154 /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				FFE67E98228EB65BAA72926F /* BackgroundCaptureTests.swift */,
+				2D0C8F252B330A129894377D /* ClipDeviceInteractionTests.swift */,
+				83E02B4C20D0345576359695 /* ClipIntentTests.swift */,
+				F2A9E42319C0B99DE889F94C /* ClipInteractionTests.swift */,
+				08E4C7BB08054A8E2F66D697 /* ClipUITests.swift */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
+		7158DC05E49172729CDD9282 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3C59A203979570A7D1212321 /* ClipStoreTests.swift */,
+				C098BFB13B54426E99DB1F55 /* ClipTitleTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		80C0071EBB6F1CC3D9710C89 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F01E0A3843DB64DCD1DB23C /* UserNotificationsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8617D101CD4DE243E5620574 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				47FE2A43745B4C4CE5E102DF /* ClipboardCapture.swift */,
+				C224A0C28F20C51B06B7B377 /* ClipNotifications.swift */,
+				F79BF3522DD6894765AE1A05 /* ClipStore.swift */,
+				A57CC339BB001326468E84F5 /* ClipTheme.swift */,
+				5CE37E62D7D859C549157724 /* ContentLoader.swift */,
+				B3C2D061090A8969761F8FD7 /* Models.swift */,
+				6221451A47B5DA8F6C5D4392 /* Privacy.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		88D259505BB7B12491B0524D = {
+			isa = PBXGroup;
+			children = (
+				08B04939F3F8B86F5B4F1DD6 /* App */,
+				8617D101CD4DE243E5620574 /* Core */,
+				95EC952FC4B6D174F7CD5D21 /* Keyboard */,
+				38998F4450C38705F727D941 /* Notification */,
+				A0CED84C690D822189559A7F /* Resources */,
+				22A01EFA414233AC8CCDF9EA /* Share */,
+				7158DC05E49172729CDD9282 /* Tests */,
+				CEC2A5DC93056395177D7203 /* TestSupport */,
+				4A416090C84974865E8D0154 /* UITests */,
+				AFB1A2DF899814010CECEF8D /* Widgets */,
+				80C0071EBB6F1CC3D9710C89 /* Frameworks */,
+				3C008AF97E77E65D9BE433D4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		95EC952FC4B6D174F7CD5D21 /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				CBEBBE41537185023F43E72D /* Info.plist */,
+				2323808CC6D37C3C760ADDF9 /* KeyboardViewController.swift */,
+			);
+			path = Keyboard;
+			sourceTree = "<group>";
+		};
+		A0CED84C690D822189559A7F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C18C6A7ECD95144DFBE22E6C /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AFB1A2DF899814010CECEF8D /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				628F7BAC6710C58F39708B68 /* ClipWidgets.swift */,
+				2F36412DC4E2EFB7F0E9D738 /* Info.plist */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		CEC2A5DC93056395177D7203 /* TestSupport */ = {
+			isa = PBXGroup;
+			children = (
+				BD3B554F5FB5701DF8613706 /* ClipTestSource.swift */,
+			);
+			path = TestSupport;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0B8CB72E8BCA1FA7C6F376C6 /* ClipityTestSource */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6A463ACD7E0F26475411FC6 /* Build configuration list for PBXNativeTarget "ClipityTestSource" */;
+			buildPhases = (
+				5B9553FFEBBDFF5E6061D392 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClipityTestSource;
+			packageProductDependencies = (
+			);
+			productName = ClipityTestSource;
+			productReference = CACDFDE6048C69E60C4F3AD8 /* ClipityTestSource.app */;
+			productType = "com.apple.product-type.application";
+		};
+		30781D66547975A634329364 /* ClipityUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A30787D7C075CE58C84D771 /* Build configuration list for PBXNativeTarget "ClipityUITests" */;
+			buildPhases = (
+				AC214BCB2B457C2BD4597FF6 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDA386B4729035B41D15F74D /* PBXTargetDependency */,
+				5C91C55BC577A9E17277105F /* PBXTargetDependency */,
+			);
+			name = ClipityUITests;
+			packageProductDependencies = (
+			);
+			productName = ClipityUITests;
+			productReference = BBEFECE45477249B0DB9DEBA /* ClipityUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		32BCB88E92B77BF8364DD968 /* ClipityKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C79BEF13891678B82F5A3EC /* Build configuration list for PBXNativeTarget "ClipityKeyboard" */;
+			buildPhases = (
+				55FD0258264901CBDB40D546 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClipityKeyboard;
+			packageProductDependencies = (
+			);
+			productName = ClipityKeyboard;
+			productReference = BF88AD602B60E8068D6B3FE3 /* ClipityKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		3EEF83735D9FD47E288298AE /* ClipityNotification */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F9E44F97BEF586E071EE220 /* Build configuration list for PBXNativeTarget "ClipityNotification" */;
+			buildPhases = (
+				FD2E2A9F1FFC897070D6CF1B /* Sources */,
+				E8BE050D358810E7BBE1DEAE /* Resources */,
+				CCF22992C8F1B31423165B0E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClipityNotification;
+			packageProductDependencies = (
+			);
+			productName = ClipityNotification;
+			productReference = 3003469134993CC3924C59AC /* ClipityNotification.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		403EFEF836E24EB4BDDF885C /* ClipityWidgets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F487E2CEDE70F92E532E3EA8 /* Build configuration list for PBXNativeTarget "ClipityWidgets" */;
+			buildPhases = (
+				565688F34BE8A80909F83E64 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClipityWidgets;
+			packageProductDependencies = (
+			);
+			productName = ClipityWidgets;
+			productReference = 57AEB2BC4B19E4972EE02C53 /* ClipityWidgets.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		4E8C95167E4D3AD392517DDF /* ClipityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BD8B36820627E58BB8D47BA /* Build configuration list for PBXNativeTarget "ClipityTests" */;
+			buildPhases = (
+				6C0CE2375EC5B5765B063AFF /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE0277AD7EBABF137D4D5F00 /* PBXTargetDependency */,
+			);
+			name = ClipityTests;
+			packageProductDependencies = (
+			);
+			productName = ClipityTests;
+			productReference = 239EB3F3B1B6B39EF3250F7D /* ClipityTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6157A9649B72ABC292DE3473 /* ClipityShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDABF6E6B107281212FAA7E7 /* Build configuration list for PBXNativeTarget "ClipityShare" */;
+			buildPhases = (
+				F4227D0C1D5A62E20E663674 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClipityShare;
+			packageProductDependencies = (
+			);
+			productName = ClipityShare;
+			productReference = AE1CA72994F40420CE8B80C7 /* ClipityShare.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		65205A0D60342B11C3794BB0 /* Clipity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8227F9FD94FC8C6A1C663FF /* Build configuration list for PBXNativeTarget "Clipity" */;
+			buildPhases = (
+				0613E04E47F99AC8BA63C9C1 /* Sources */,
+				98900D5E25B1942B89553173 /* Resources */,
+				C6AB4C65B99F06A251D26C67 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC9C1E60A25E7B4332763C26 /* PBXTargetDependency */,
+				E83B94B324637CB981948838 /* PBXTargetDependency */,
+				483469AFF10CE9F2E0ACBD04 /* PBXTargetDependency */,
+				8EC80C238920A03F045B10CD /* PBXTargetDependency */,
+			);
+			name = Clipity;
+			packageProductDependencies = (
+			);
+			productName = Clipity;
+			productReference = D1596AFE39A3E0D006A54B20 /* Clipity.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D4B9AB9DF8587A15804922C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					0B8CB72E8BCA1FA7C6F376C6 = {
+						ProvisioningStyle = Automatic;
+					};
+					30781D66547975A634329364 = {
+						ProvisioningStyle = Automatic;
+						TestTargetID = 65205A0D60342B11C3794BB0;
+					};
+					32BCB88E92B77BF8364DD968 = {
+						ProvisioningStyle = Automatic;
+					};
+					3EEF83735D9FD47E288298AE = {
+						ProvisioningStyle = Automatic;
+					};
+					403EFEF836E24EB4BDDF885C = {
+						ProvisioningStyle = Automatic;
+					};
+					4E8C95167E4D3AD392517DDF = {
+						ProvisioningStyle = Automatic;
+					};
+					6157A9649B72ABC292DE3473 = {
+						ProvisioningStyle = Automatic;
+					};
+					65205A0D60342B11C3794BB0 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4CE65E19917662B2108D4DE8 /* Build configuration list for PBXProject "Clipity" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 88D259505BB7B12491B0524D;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3C008AF97E77E65D9BE433D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65205A0D60342B11C3794BB0 /* Clipity */,
+				3EEF83735D9FD47E288298AE /* ClipityNotification */,
+				6157A9649B72ABC292DE3473 /* ClipityShare */,
+				403EFEF836E24EB4BDDF885C /* ClipityWidgets */,
+				32BCB88E92B77BF8364DD968 /* ClipityKeyboard */,
+				4E8C95167E4D3AD392517DDF /* ClipityTests */,
+				30781D66547975A634329364 /* ClipityUITests */,
+				0B8CB72E8BCA1FA7C6F376C6 /* ClipityTestSource */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		98900D5E25B1942B89553173 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3FEFB5136357B0E45E44A59 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8BE050D358810E7BBE1DEAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0947938B4E85E0C7F18CFDC1 /* Notification.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0613E04E47F99AC8BA63C9C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB4340CF5C62840328D426A4 /* ClipApp.swift in Sources */,
+				29C17C8D357D839AFF7FD90A /* ClipEditor.swift in Sources */,
+				7151D9C6290536F9CEED7329 /* ClipIntents.swift in Sources */,
+				BDB5DE78421DA7A32077B606 /* ClipLabeler.swift in Sources */,
+				E3B3098F5D4199A4F5A18FD3 /* ClipNotifications.swift in Sources */,
+				161630D5D9B2E6C8C61FFAC7 /* ClipQuickActions.swift in Sources */,
+				36CD72161CFCF6A790C119D5 /* ClipRoute.swift in Sources */,
+				31A5FD9172169F5B3190F56B /* ClipStore.swift in Sources */,
+				CBFE145941CF9BEA2E85FB53 /* ClipTheme.swift in Sources */,
+				893B5DB826CA2DAE427BD50C /* ClipThumbnail.swift in Sources */,
+				5F7953B73EC1E0C96FC1AAB9 /* ClipTitleGenerator.swift in Sources */,
+				A686A7A4995ED6F5B3E442AE /* ClipboardCapture.swift in Sources */,
+				7C9FAF3E459C852497027FAA /* ClippingEntity.swift in Sources */,
+				8BAC42E81736BF3FEA5C8A8E /* ContentLoader.swift in Sources */,
+				65502B0CE0A664482C7A0885 /* EditorCaptureScope.swift in Sources */,
+				EED4D4D87152676DDC534C38 /* LibraryNavigationBar.swift in Sources */,
+				ED04312C7F59AA8CD2C54B16 /* LibraryView.swift in Sources */,
+				FF6D3C4A1626967751C0AF46 /* Models.swift in Sources */,
+				F6B81ACEE038ED9FC2AAD4C7 /* PasteboardMonitor.swift in Sources */,
+				FED547EAE3919C255A50DA5E /* Privacy.swift in Sources */,
+				C58DE698D5D962BFFFB185D5 /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55FD0258264901CBDB40D546 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FE2A7BC8AA05CC5FAD46D67 /* ClipNotifications.swift in Sources */,
+				259FC493532480A0872B44C7 /* ClipStore.swift in Sources */,
+				168FDAB109BF3F912A0B7F88 /* ClipTheme.swift in Sources */,
+				1470744E8BE7A148222FE3AA /* ClipboardCapture.swift in Sources */,
+				5567AB29D36405D6B2BD8AD0 /* ContentLoader.swift in Sources */,
+				F5CF115205EE30B66D86FADF /* KeyboardViewController.swift in Sources */,
+				27C8FF1372683748E5860EDB /* Models.swift in Sources */,
+				E7245314ED40F3738577D59D /* Privacy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		565688F34BE8A80909F83E64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED8829B77376980E247020CC /* ClipNotifications.swift in Sources */,
+				8D8F8594AABDEFC516897D7E /* ClipStore.swift in Sources */,
+				488C94EF893932C5BD5F236A /* ClipTheme.swift in Sources */,
+				E97DEFFCECDB545D4D5880C0 /* ClipWidgets.swift in Sources */,
+				B63A09B96A51A65F384249C5 /* ClipboardCapture.swift in Sources */,
+				71E0AAE6B4BF6A06AEE2E34E /* ContentLoader.swift in Sources */,
+				428DD694BC3B5E66CF156827 /* Models.swift in Sources */,
+				C32FD3CA4BB719E6BA5E0526 /* Privacy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B9553FFEBBDFF5E6061D392 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C2F439426A0EC6E12969FC0 /* ClipTestSource.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C0CE2375EC5B5765B063AFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11011BB5244A2BEC9D108FEE /* ClipStoreTests.swift in Sources */,
+				7126531E9618B356179AFA37 /* ClipTitleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC214BCB2B457C2BD4597FF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DE7CD8E7598EA11841E9A3D /* BackgroundCaptureTests.swift in Sources */,
+				9EB70F93AF9363F96FFACE9F /* ClipDeviceInteractionTests.swift in Sources */,
+				1DB04919318490AE10701CA9 /* ClipIntentTests.swift in Sources */,
+				734BAF28964FD9F981D6F3B2 /* ClipInteractionTests.swift in Sources */,
+				ABCADCD942CEAFE9A55301B4 /* ClipUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4227D0C1D5A62E20E663674 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99AC1FF6014880654C38352E /* ClipNotifications.swift in Sources */,
+				FFECB4E982B71204DC03410B /* ClipStore.swift in Sources */,
+				D860FBA2135B8D063279A264 /* ClipTheme.swift in Sources */,
+				DD9EEDBE8E1ED63FE85263BD /* ClipboardCapture.swift in Sources */,
+				B448C394DEC022FE7BBC7132 /* ContentLoader.swift in Sources */,
+				F12EBA6E6ED86F9281398DC3 /* Models.swift in Sources */,
+				AB8D9618F0903DE5F9DFA7D0 /* Privacy.swift in Sources */,
+				486B86DE12B2853270C9BFD7 /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD2E2A9F1FFC897070D6CF1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3965B96AB76E6A07C526EB8A /* ClipNotifications.swift in Sources */,
+				FEB3FE129316D92E9C901A43 /* ClipStore.swift in Sources */,
+				77880020D18BA01ED3B98D14 /* ClipTheme.swift in Sources */,
+				07EFFCA8BEBA69795E26283C /* ClipboardCapture.swift in Sources */,
+				CE675E03D659FCE4B8D10FC9 /* ContentLoader.swift in Sources */,
+				620AE99A66579201BF73F56B /* Models.swift in Sources */,
+				46975502FAD0E6579280A758 /* NotificationViewController.swift in Sources */,
+				E9A682568EFCE12F8646BB76 /* Privacy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		483469AFF10CE9F2E0ACBD04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32BCB88E92B77BF8364DD968 /* ClipityKeyboard */;
+			targetProxy = C22176742647230D4CC7E096 /* PBXContainerItemProxy */;
+		};
+		5C91C55BC577A9E17277105F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B8CB72E8BCA1FA7C6F376C6 /* ClipityTestSource */;
+			targetProxy = 64DBC744E1CB6D229B85D513 /* PBXContainerItemProxy */;
+		};
+		8EC80C238920A03F045B10CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3EEF83735D9FD47E288298AE /* ClipityNotification */;
+			targetProxy = 3780A1CBE22DE6EA7812BE07 /* PBXContainerItemProxy */;
+		};
+		CDA386B4729035B41D15F74D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65205A0D60342B11C3794BB0 /* Clipity */;
+			targetProxy = BFF4AAE8DA999F9726A597E7 /* PBXContainerItemProxy */;
+		};
+		DC9C1E60A25E7B4332763C26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6157A9649B72ABC292DE3473 /* ClipityShare */;
+			targetProxy = 4D50025853367BDA6ADB6E77 /* PBXContainerItemProxy */;
+		};
+		E83B94B324637CB981948838 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 403EFEF836E24EB4BDDF885C /* ClipityWidgets */;
+			targetProxy = F959ACAFCF500A4DDB4CBB92 /* PBXContainerItemProxy */;
+		};
+		FE0277AD7EBABF137D4D5F00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65205A0D60342B11C3794BB0 /* Clipity */;
+			targetProxy = F812E8367E801FE1A45A966C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00C586A01346330B46045867 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = Shared.entitlements;
+				INFOPLIST_FILE = Widgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.thamo.clipity.widgets;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1CE4F3214D8648DFC23A9411 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = Shared.entitlements;
+				INFOPLIST_FILE = Notification/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.thamo.clipity.notification;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		20BB2F6DEC5705745E693A29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Shared.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.thamo.clipity;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		365B22F4BE954DF97DAEDFA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.thamo.clipity.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Clipity.app/Clipity";
+			};
+			name = Debug;
+		};
+		438F69170DBA27B33C2DBAEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = Shared.entitlements;
+				INFOPLIST_FILE = Notification/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.thamo.clipity.notification;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		49D4F252BD8DC0593B6F6E12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = Shared.entitlements;
+				INFOPLIST_FILE = Keyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.thamo.clipity.keyboard;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4F64870968A922FCDCCF4E1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.thamo.clipity.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Clipity;
+			};
+			name = Release;
+		};
+		56B934A81AA39A45E2B22312 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = Shared.entitlements;
+				INFOPLIST_FILE = Share/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.thamo.clipity.share;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5A6BB1A8BB0BD3FDA45C9FEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.thamo.clipity.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Clipity;
+			};
+			name = Debug;
+		};
+		6282CFB9EB97E6B4A2417F50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = Shared.entitlements;
+				INFOPLIST_FILE = Keyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.thamo.clipity.keyboard;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6454D4DAA63392E98C1FADC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = Shared.entitlements;
+				INFOPLIST_FILE = Widgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.thamo.clipity.widgets;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6C41980A03C9C4D6F9A5965A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.thamo.clipity.testsource;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		80792C9BE87975C15396BE10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = Shared.entitlements;
+				INFOPLIST_FILE = Share/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.thamo.clipity.share;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		839124B7F62911D005800F7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.thamo.clipity.testsource;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		94233FF3F43C6E4624C75605 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.thamo.clipity.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Clipity.app/Clipity";
+			};
+			name = Release;
+		};
+		BDB03FA917E20E8DB17BD66E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Shared.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.thamo.clipity;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE06130154027884D5D2AF1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CLIPITY_APP_GROUP = group.de.thamo.clipity;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 203;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 2.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD2EDB033B1559F8D5BFA1DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CLIPITY_APP_GROUP = group.de.thamo.clipity;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 203;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 2.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A30787D7C075CE58C84D771 /* Build configuration list for PBXNativeTarget "ClipityUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A6BB1A8BB0BD3FDA45C9FEA /* Debug */,
+				4F64870968A922FCDCCF4E1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3BD8B36820627E58BB8D47BA /* Build configuration list for PBXNativeTarget "ClipityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				365B22F4BE954DF97DAEDFA6 /* Debug */,
+				94233FF3F43C6E4624C75605 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4CE65E19917662B2108D4DE8 /* Build configuration list for PBXProject "Clipity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE06130154027884D5D2AF1F /* Debug */,
+				FD2EDB033B1559F8D5BFA1DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4F9E44F97BEF586E071EE220 /* Build configuration list for PBXNativeTarget "ClipityNotification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CE4F3214D8648DFC23A9411 /* Debug */,
+				438F69170DBA27B33C2DBAEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8C79BEF13891678B82F5A3EC /* Build configuration list for PBXNativeTarget "ClipityKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6282CFB9EB97E6B4A2417F50 /* Debug */,
+				49D4F252BD8DC0593B6F6E12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BDABF6E6B107281212FAA7E7 /* Build configuration list for PBXNativeTarget "ClipityShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80792C9BE87975C15396BE10 /* Debug */,
+				56B934A81AA39A45E2B22312 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E8227F9FD94FC8C6A1C663FF /* Build configuration list for PBXNativeTarget "Clipity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDB03FA917E20E8DB17BD66E /* Debug */,
+				20BB2F6DEC5705745E693A29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F487E2CEDE70F92E532E3EA8 /* Build configuration list for PBXNativeTarget "ClipityWidgets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6454D4DAA63392E98C1FADC9 /* Debug */,
+				00C586A01346330B46045867 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F6A463ACD7E0F26475411FC6 /* Build configuration list for PBXNativeTarget "ClipityTestSource" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C41980A03C9C4D6F9A5965A /* Debug */,
+				839124B7F62911D005800F7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D4B9AB9DF8587A15804922C /* Project object */;
+}

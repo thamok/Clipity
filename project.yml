@@ -1,0 +1,118 @@
+name: Clipity
+options:
+  deploymentTarget:
+    iOS: '26.0'
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: '6.0'
+    TARGETED_DEVICE_FAMILY: '1,2'
+    MARKETING_VERSION: '2.2'
+    CURRENT_PROJECT_VERSION: '203'
+    CODE_SIGN_STYLE: Automatic
+    CLIPITY_APP_GROUP: group.de.thamo.clipity
+    CLANG_ENABLE_MODULES: YES
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+    IPHONEOS_DEPLOYMENT_TARGET: '26.0'
+    LOCALIZATION_PREFERS_STRING_CATALOGS: YES
+    SUPPORTS_MACCATALYST: NO
+targets:
+  Clipity:
+    type: application
+    platform: iOS
+    sources:
+      - Core
+      - App
+      - Resources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: de.thamo.clipity
+        INFOPLIST_FILE: App/Info.plist
+        CODE_SIGN_ENTITLEMENTS: Shared.entitlements
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+    dependencies:
+      - target: ClipityShare
+      - target: ClipityWidgets
+      - target: ClipityKeyboard
+      - target: ClipityNotification
+  ClipityNotification:
+    type: app-extension
+    platform: iOS
+    sources: [Core, Notification]
+    dependencies:
+      - sdk: UserNotificationsUI.framework
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: de.thamo.clipity.notification
+        INFOPLIST_FILE: Notification/Info.plist
+        CODE_SIGN_ENTITLEMENTS: Shared.entitlements
+        APPLICATION_EXTENSION_API_ONLY: YES
+  ClipityShare:
+    type: app-extension
+    platform: iOS
+    sources: [Core, Share]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: de.thamo.clipity.share
+        INFOPLIST_FILE: Share/Info.plist
+        CODE_SIGN_ENTITLEMENTS: Shared.entitlements
+        APPLICATION_EXTENSION_API_ONLY: YES
+  ClipityWidgets:
+    type: app-extension
+    platform: iOS
+    sources: [Core, Widgets]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: de.thamo.clipity.widgets
+        INFOPLIST_FILE: Widgets/Info.plist
+        CODE_SIGN_ENTITLEMENTS: Shared.entitlements
+        APPLICATION_EXTENSION_API_ONLY: YES
+  ClipityKeyboard:
+    type: app-extension
+    platform: iOS
+    sources: [Core, Keyboard]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: de.thamo.clipity.keyboard
+        INFOPLIST_FILE: Keyboard/Info.plist
+        CODE_SIGN_ENTITLEMENTS: Shared.entitlements
+        APPLICATION_EXTENSION_API_ONLY: YES
+  ClipityTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: [Tests]
+    dependencies:
+      - target: Clipity
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: de.thamo.clipity.tests
+        GENERATE_INFOPLIST_FILE: YES
+  ClipityUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources: [UITests]
+    dependencies:
+      - target: Clipity
+      - target: ClipityTestSource
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: de.thamo.clipity.uitests
+        GENERATE_INFOPLIST_FILE: YES
+  ClipityTestSource:
+    type: application
+    platform: iOS
+    sources: [TestSupport]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: de.thamo.clipity.testsource
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+schemes:
+  Clipity:
+    build:
+      targets:
+        Clipity: all
+        ClipityTests: [test]
+    test:
+      targets: [ClipityTests, ClipityUITests]
